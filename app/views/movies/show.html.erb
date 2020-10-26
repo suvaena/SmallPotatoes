@@ -1,0 +1,10 @@
+<% if flash[:message] %>
+  <p><%= flash[:message] %></p>
+<% else %>
+<table>
+    <tr><td>Title:</td><td><%= @movie.title %></td></tr>
+    <tr><td>Rating:</td><td><%= @movie.rating %></td></tr>
+    <tr><td>Description:</td><td><%= @movie.description %></td></tr>
+    <tr><td>Release Date:</td><td><%= @movie.release_date %></td></tr>
+</table>
+<% end %>

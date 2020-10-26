@@ -1,0 +1,7 @@
+<h1>Movies</h1>
+<ul>
+<% @movies.each do |movie| %>
+<li><a href=/movies/<%= movie.id %>><%= movie.title + ' (' + movie.release_date.to_s[0,4] + ')' %></a></li>
+<% end %>
+</ul>
+<a href = /movies/new>Add New Movie</a>

@@ -1,0 +1,12 @@
+<h1>Add new movie to database</h1>
+<%= form_with( url: movies_create_path, local: true) do |form| %>
+<%= label_tag("Enter movie title: ") %>
+<%= text_field_tag( :title) %>
+<%= label_tag("Enter movie rating: ") %>
+<%= text_field_tag( :rating) %>
+<%= label_tag("Enter movie release date: ") %>
+<%= text_field_tag( :release_date) %>
+<%= label_tag("Enter movie description: ") %>
+<%= text_field_tag( :description) %>
+<%= submit_tag 'Create' %>
+<% end %>
